@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/design-works",
+      "handler": "design-works.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/design-works/count",
+      "handler": "design-works.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/design-works/:id",
+      "handler": "design-works.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/design-works",
+      "handler": "design-works.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/design-works/:id",
+      "handler": "design-works.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/design-works/:id",
+      "handler": "design-works.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

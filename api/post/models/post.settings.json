@@ -27,6 +27,15 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "posts"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "post"
+    },
+    "Meta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.meta"
     }
   }
 }

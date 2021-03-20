@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_tech_dev_works",
+  "info": {
+    "name": "devWorks",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    }
+  }
+}

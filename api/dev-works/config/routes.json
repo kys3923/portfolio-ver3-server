@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dev-works",
+      "handler": "dev-works.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dev-works/count",
+      "handler": "dev-works.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dev-works/:id",
+      "handler": "dev-works.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dev-works",
+      "handler": "dev-works.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dev-works/:id",
+      "handler": "dev-works.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dev-works/:id",
+      "handler": "dev-works.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

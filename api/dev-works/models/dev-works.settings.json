@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_works",
+  "info": {
+    "name": "devWorks",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "bgImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "task": {
+      "type": "richtext"
+    },
+    "solution": {
+      "type": "richtext"
+    },
+    "tech": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tech.dev-works"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}
